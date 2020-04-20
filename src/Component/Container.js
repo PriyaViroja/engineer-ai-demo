@@ -110,7 +110,7 @@ class Container extends React.Component {
                     onChangeRowsPerPage={this.handleChangeRowsPerPage}
                 //ActionsComponent={TablePaginationActions}
                 />
-                <BlogDetails handleClose={this.handleClose}></BlogDetails>
+                <BlogDetails data={this.state.Details} open={this.state.Open} handleClose={this.handleClose}></BlogDetails>
             </>
         )
     }
