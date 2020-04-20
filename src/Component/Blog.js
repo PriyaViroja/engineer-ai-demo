@@ -37,7 +37,7 @@ class Blog extends React.Component {
                         </Box>
                         <Box >
                             <Button variant="contained" color="primary"
-                                onClick={this.props.openDialogue}
+                                onClick={() => this.props.openDialogue(this.props.data)}
                             >Show more</Button>
                         </Box>
                     </CardContent>
